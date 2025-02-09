@@ -28,6 +28,7 @@ const BoxComponent = () => {
   // Subscribe this component to the render-loop, rotate the mesh every frame
   useFrame((state, delta) =>
     mesh.current
+      // @ts-expect-error
       ? (mesh.current.rotation.y = mesh.current.rotation.x += 0.01)
       : null
   )
@@ -44,6 +45,7 @@ const BoxComponent = () => {
       >
         <boxGeometry args={[2, 2, 2]} />
         <meshPhysicalMaterial 
+          // @ts-expect-error
           color={route === '/' ? 'darkgreen' : 'orange'}
         />
       </mesh>
