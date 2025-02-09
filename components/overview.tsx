@@ -29,7 +29,7 @@ const BoxComponent = () => {
   useFrame((state, delta) =>
     mesh.current
       // @ts-expect-error
-      ? (mesh.current.rotation.y = mesh.current.rotation.x += 0.01)
+      ? (mesh.current.rotation.y = mesh.current.rotation.x += 0.005)
       : null
   )
 
@@ -45,7 +45,6 @@ const BoxComponent = () => {
       >
         <boxGeometry args={[2, 2, 2]} />
         <meshPhysicalMaterial 
-          // @ts-expect-error
           color={route === '/' ? 'darkgreen' : 'orange'}
         />
       </mesh>
