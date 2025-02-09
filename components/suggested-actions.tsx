@@ -22,9 +22,14 @@ function PureSuggestedActions({ chatId, append }: SuggestedActionsProps) {
     },
     {
       title: 'Write code to',
-      label: `demonstrate djikstra's algorithm`,
-      action: `Write code to demonstrate djikstra's algorithm.`,
+      label: `demonstrate installing ThreeD Garden npm package`,
+      action: `Write code to demonstrate installing ThreeD Garden npm package.`,
     },
+    // {
+    //   title: 'Write code to',
+    //   label: `demonstrate djikstra's algorithm`,
+    //   action: `Write code to demonstrate djikstra's algorithm.`,
+    // },
     {
       title: 'Help me write code for ThreeD apps',
       label: `about threed.ai`,
