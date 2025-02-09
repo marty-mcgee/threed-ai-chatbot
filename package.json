@@ -1,6 +1,6 @@
 {
   "name": "threed-ai-chatbot",
-  "version": "0.1.0-alpha.0",
+  "version": "0.1.0-alpha.1",
   "private": true,
   "scripts": {
     "dev": "next dev --turbo",
@@ -79,7 +79,9 @@
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7",
     "usehooks-ts": "^3.1.0",
-    "zod": "^3.23.8"
+    "zod": "^3.23.8",
+    
+    "@react-three/fiber": "9.0.0-rc.7"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
